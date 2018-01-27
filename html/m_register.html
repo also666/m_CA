@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scae=1, user-scalable=no">
+<meta name="keywords" content="村安网、村安商城、村安网上商城、化妆品商城、个人彩护商城、手机数码商城、家居百货商城、男装内衣商城、女装内衣商城、食品酒水商城、家用电器商城、男女鞋靴商城、箱包配饰商城、母婴儿童用品商城、营养保健商城、数码影音商城、手机通讯商城">
+<meta name="description" content="村安商城是一个拥有个人彩护、手机数码、家居百货、母婴儿童、男女鞋靴、男装内衣、女装内衣、食品酒水、箱包配饰、家用电器、数码影音、营养保健等数万款产品的综合性网购商城，为您提供经济实惠的购物新生活">
+<title>村安商城-欢迎注册</title>
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../css/m_base.css">
+<link rel="stylesheet" type="text/css" href="../css/swiper-4.1.0.min.css">
+<link rel="stylesheet" type="text/css" href="../css/m_register.css">
+<script src="../js/adaptive.js"></script>
+<script type="text/javascript">
+var code;
+function createCode() 
+{
+ code = "";
+ var codeLength = 6; //验证码的长度
+ var checkCode = document.getElementById("checkCode");
+ var codeChars = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 
+      'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
+      'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'); //所有候选组成验证码的字符，当然也可以用中文的
+ for(var i = 0; i < codeLength; i++) 
+ {
+  var charNum = Math.floor(Math.random() * 52);
+  code += codeChars[charNum];
+ }
+ if(checkCode) 
+ {
+  checkCode.className = "code";
+  checkCode.innerHTML = code;
+ }
+}
+</script>
+</head>
+
+<body onload="createCode()">
+<header>
+	<div class="header_l">
+    	<i class="iconfont"><a href="m_login.html" style="color:#353736;">&#xe6bc;</a></i>
+    </div>
+    <div class="header_tit">
+    	<h2>新用户注册</h2>
+    </div>
+    <div class="header_r">
+    	<b class="iconfont"><a href="../index.html" style="color:#808080;">&#xe630;</a></b>
+    </div>
+</header>
+<main>
+	<div class="container">
+    	<form action="" method="get">
+        	<span>手机号码:</span><input type="text" placeholder="请输入您的手机号码" id="phone">
+            <span>密码:</span><input type="password" placeholder="请输入您的登录密码" id="psword">
+            <span>确认密码:</span><input type="password" placeholder="请确认您的登录密码" id="psword2">
+            <span>验证码:</span><input type="text" placeholder="不区分大小写" id="ed_code">
+            <div class="createcode">
+				<div class="code" id="checkCode" onclick="createCode()" ></div>
+				<a href="javascript:;" onclick="createCode()" id="code-link">点击刷新</a>
+			</div>
+            <span>短信验证:</span><input type="text" id="note">
+            <button>获取短信</button>
+            <span>邀请码:</span><input type="text" placeholder="邀请人的用户编号，可不填" id="invite">
+            <input type="button" id="register" value="注册" formaction="../index.html">
+        </form>
+    </div>
+    <div class="foot">
+    	<img src="../images/index_logo_f.png">
+    </div>
+</main>
+
+</body>
+</html>

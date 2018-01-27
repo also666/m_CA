@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scae=1, user-scalable=no">
+<meta name="keywords" content="村安网、村安商城、村安网上商城、化妆品商城、个人彩护商城、手机数码商城、家居百货商城、男装内衣商城、女装内衣商城、食品酒水商城、家用电器商城、男女鞋靴商城、箱包配饰商城、母婴儿童用品商城、营养保健商城、数码影音商城、手机通讯商城">
+<meta name="description" content="村安商城是一个拥有个人彩护、手机数码、家居百货、母婴儿童、男女鞋靴、男装内衣、女装内衣、食品酒水、箱包配饰、家用电器、数码影音、营养保健等数万款产品的综合性网购商城，为您提供经济实惠的购物新生活">
+<title>村安商城-个人用户</title>
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../css/m_base.css">
+<link rel="stylesheet" type="text/css" href="../css/swiper-4.1.0.min.css">
+<link rel="stylesheet" type="text/css" href="../css/m_svip.css">
+<script src="../js/adaptive.js"></script>
+<script>
+$(document).ready(function(){
+  $(window).scroll(function(){
+	  if($(window).scrollTop()>600)
+	  {
+		  $("#back_top").fadeIn();
+		  $("#call_box").css('bottom','1.94rem');
+		  }
+      else{
+		   $("#back_top").fadeOut();
+		   $("#call_box").css('bottom','1.04rem');
+		  }
+  });
+  
+   $(".close_btn").click(function(){
+    $(".tcceng").hide();
+	$(".mask").hide();
+  });
+  
+  
+  
+});
+</script>
+</head>
+
+<body>
+<header>
+	<div class="header_l">
+    	<a href="#"><img src="../images/svip_2.png"></a>
+    </div>
+    <div class="header_con">
+    	<p>17719973177[727727]</p>
+        <span>普通会员</span>
+        <i>17719973177<a href="#">绑定其他手机号码</a></i>
+    </div>
+    <div class="header_r">
+    	<a href="m_login.html"><p>退出<span class="iconfont">&#xe670;</span></p></a>
+    </div>
+</header>
+<main>
+	<ul class="main_top">
+    	<li>
+        	<a href="#"><i class="iconfont">&#xe628;</i><span>待付款(0)</span></a>
+        </li>
+        <li>
+        	<a href="#"><i class="iconfont">&#xe62a;</i><span>待发货(0)</span></a>
+        </li>
+        <li>
+        	<a href="#"><i class="iconfont">&#xe631;</i><span>待收货(0)</span></a>
+        </li>
+    </ul>
+    <div class="main_order">
+    	<a href="#"><i class="iconfont">&#xe609;</i><span>全部订单</span><b class="iconfont">&#xe604;</b></a>
+    </div>
+    <div class="main_account">
+    	<a href="#"><i class="iconfont">&#xe62f;</i><span>账户管理</span><b class="iconfont">&#xe604;</b></a>
+    </div>
+    <div class="main_address">
+    	<a href="#"><i class="iconfont">&#xe616;</i><span>地址管理</span><b class="iconfont">&#xe604;</b></a>
+    </div>
+    <div class="main_bg">
+    	<img src="../images/index_logo_f.png">
+    </div>
+</main>
+<footer>
+	<ul>
+    	<li><i class="iconfont"><a href="../index.html" style="font-size:0.36rem; margin-top:0.02rem;">&#xe60c;</a></i><span><a href="#">购物</a></span></li>
+        <li><i class="iconfont"><a href="m_goods.html">&#xe644;</a></i><span><a href="m_goods.html">搜索</a></span></li>
+        <li><i class="iconfont"><a href="m_shopcart.html" style="font-size:0.44rem; margin-top:-0.06rem;">&#xe62c;</a></i><span><a href="m_shopcart.html">购物车</a></span></li>
+        <li><i class="iconfont"><a href="m_svip.html">&#xe643;</a></i><span><a href="m_svip.html">个人中心</a></span></li>
+    </ul>
+</footer>
+<div id="call_box">
+	<div class="call_box">
+    	<span><a href="#">客服</a></span>
+    </div>
+    <div id="back_top">
+    <div class="back_top">
+    	<i class="iconfont"><a href="#">&#xe67c;</a></i>
+    </div>
+    </div>
+</div>
+</body>
+</html>
